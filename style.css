@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    list-style: none;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    background-color: #202731;
+    max-width: 25%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+.circle{
+    background-color: #25303C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.circle.opt:hover{
+    transition: 0.3s;
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.circle.selected{
+    background-color: hsl(217, 12%, 63%);
+}
+
+.circle.selected:hover{
+    background-color: hsl(217, 12%, 63%);
+}
+
+.main-text {
+    color: hsl(0, 0%, 100%);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.p-text{
+    color: hsl(216, 12%, 54%);
+    margin-bottom: 25px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    flex-direction: row;
+}
+
+button{
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    min-width: 100%;
+    padding: 10px;
+    border-style: none;
+    border-radius: 20px;
+}
+
+button:hover{
+    transition: 0.3s;
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
